@@ -20,7 +20,7 @@ body {
 
 .infos {
 	position: absolute;
-	right: 34%;
+	right: 24%; /* Mudar conforme a tela.*/
 	top: 398px;
 	width: 410px;
 	font-size: 16px;
@@ -30,16 +30,32 @@ body {
 	height:19px;
 }
 
-.nota {
+.nota1, .nota2, .nota3, .nota4 {
 	width: 55px;
 }
 
 .nfinal {
-	font-size: 35px;
-	height: 37px;
-	width: 50px;
-	border: 2px solid black;
+	font-size: 28px;
+	height: auto;
+	width: auto;
 	position: absolute;
-	top: 116px;
-	right: 141px
+	top: 101px;
+	/* right: 50px; */
+	background-color: #fada06;
+}
+
+button {
+	background-color: #20d0c2;
+	position: absolute; 
+	/* Mudar conforme a tela.*/
+	left: 197px;
+	top: 107px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #051d3b;
+	color: white;
+	/* transform: scale(1); */
 }
