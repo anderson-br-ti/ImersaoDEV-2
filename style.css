@@ -20,8 +20,8 @@ body {
 
 .infos {
 	position: absolute;
-	right: 24%; /* Mudar conforme a tela.*/
-	top: 398px;
+	right: 35%;
+	top: 392px;
 	width: 410px;
 	font-size: 16px;
 }
@@ -58,4 +58,23 @@ button:hover {
 	background: #051d3b;
 	color: white;
 	/* transform: scale(1); */
+}
+
+/* Pra fazer 'media query', usamos
+[@media], colocamos o tipo de tela que
+estamos buscando, geralmente o valor [screen],
+adicionamos [and] e colocamos a pesquisa entre parênteses. */
+@media screen and (max-width: 480px) {
+	.infos {
+		right: -6%;
+		top: 474px;
+		font-size: 22px;
+	}
+
+	.nfinal {
+		width: 329px;
+		position: absolute;
+		right: 8%;
+		top: 107px;
+	}
 }
